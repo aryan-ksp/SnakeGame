@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Choose Theme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('/assets/snake_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .theme-btn {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .classic { background: gray; color: white; }
+        .neon { background: lime; color: black; }
+        .retro { background: #F4A261; color: #264653; }
+        .dark { background: black; color: white; }
+        .start-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 25px;
+            font-size: 18px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .start-btn:hover { background: #218838; }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>🐍 Welcome to the Snake Game! 🕹️</header>
+
+    <div class="container">
+        <h2>Choose a Theme</h2>
+        <button class="theme-btn classic" onclick="setTheme('classic')">Classic</button>
+        <button class="theme-btn neon" onclick="setTheme('neon')">Neon</button>
+        <button class="theme-btn retro" onclick="setTheme('retro')">Retro</button>
+        <button class="theme-btn dark" onclick="setTheme('dark')">Dark</button>
+
+        <br>
+        <button class="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <footer>
+        Developed by Aryan | Copyright © 2025 Drom PR Pvt Ltd
+    </footer>
+
+    <script>
+        function setTheme(theme) {
+            localStorage.setItem("selectedTheme", theme);
+            alert("Theme set to " + theme);
+        }
+
+        function startGame() {
+            window.location.href = "game.html";
+        }
+    </script>
+
+</body>
+</html>
