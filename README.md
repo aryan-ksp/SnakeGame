@@ -6,10 +6,15 @@ This game offers an engaging experience with exciting features like sound effect
 
 Features
 ✅ Classic Snake Gameplay – Control the snake to eat apples and grow longer.
+
 ✅ Sound Effects – Enjoy satisfying sound feedback when eating food.
+
 ✅ Apple-Themed Food – The food appears as an apple for a more immersive look.
+
 ✅ Leaderboard – Compete with other players by achieving high scores.
+
 ✅ Themed Skins – Customize the game’s visual style with different themes.
+
 ✅ Dynamic Titles – Earn special titles based on your score:
 
 Good Player (50 points)
